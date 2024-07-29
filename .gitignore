@@ -1,0 +1,4 @@
+RE315_files/**
+__pycache__/**
+
+test.*
