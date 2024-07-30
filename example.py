@@ -18,7 +18,7 @@ assert client.authenticate(), "Auth Fail"
 
 client.startNetworkScan()
 
-while (not client.isScanFininshed()):
+while (not client.isScanFinished()):
     time.sleep(0.5)
     print("Scanning...")
     
@@ -40,7 +40,7 @@ pprint(client.getScanResult())
 
 
 pprint(client.getClients())
-pprint(client.getExtenderInfo(2)) # get 2Ghz extender info
+# pprint(client.getExtenderInfo(2)) # get 2Ghz extender info
 pprint(client.getRootAPRSSI(5)) # get 5GHz signal
 
 

@@ -299,7 +299,7 @@ class RE315Client(RE315Request):
         self.executeInstruction("wlan scan 5g")
         
     
-    def isScanFininshed(self):
+    def isScanFinished(self):
         return int(self.executeInstruction("wlan scanStatus 2g")[0]) + \
                int(self.executeInstruction("wlan scanStatus 5g")[0]) == 2
                
